@@ -1,3 +1,5 @@
+body{background: aquamarine}
 .hello {
     color: red;
+    background: url('../assets/xicha.png');
 }
