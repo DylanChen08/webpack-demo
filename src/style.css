@@ -1,5 +1,6 @@
 body{background: aquamarine}
 .hello {
+    font-size: 30px;
     color: red;
-    background: url('../assets/xicha.png');
+    background: url('../assets/xicha.png') no-repeat;
 }
