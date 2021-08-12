@@ -3,7 +3,10 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
     mode: 'development',
-    devtool: 'eval-cheap-source-map',
+    devtool: 'inline-source-map',
+    devServer: {
+        contentBase: './dist'
+    },
     //配置多入口
     entry: {
         index: './src/index.js',
