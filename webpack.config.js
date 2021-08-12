@@ -32,7 +32,10 @@ module.exports = {
         publicPath: '/',
     },
     optimization: { //优化设置项
-        runtimeChunk: 'single',
+        // runtimeChunk: 'single',
+        splitChunks: {
+            chunks: "all" //分割打包口
+        }
     },
     plugins: [
         new HtmlWebpackPlugin({
