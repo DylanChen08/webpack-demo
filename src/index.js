@@ -7,7 +7,7 @@ function component() {
     const element = document.createElement('div');
     const btn = document.createElement("button")
     // Lodash, now imported by this script
-    element.innerHTML = _.join(['Hello', 'fucking','webpack'], ' ');
+    element.innerHTML = _.join(['Hello', 'fucking', 'webpack'], ' ');
     element.classList.add('hello');
     // Add the image to our existing div.
     const myIcon = new Image();
@@ -19,6 +19,14 @@ function component() {
     element.appendChild(btn)
 
     return element;
+}
+
+
+if (module.hot) {
+    module.hot.accept('./print.js', function () {
+        console.log('Accepting the updated printMe module!');
+        printMe();
+    })
 }
 
 document.body.appendChild(component());
