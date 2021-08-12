@@ -2,17 +2,20 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
+    mode: 'development',
+    devtool: 'eval-cheap-source-map',
     //配置多入口
     entry: {
         index: './src/index.js',
         print: './src/print.js'
 
     },
-      plugins: [
+    plugins: [
         new HtmlWebpackPlugin({
-              title: 'Output Management',
+            // title: 'Output Management',
+            title: 'development',
         }),
-  ],
+    ],
     output: {
         // filename: 'main.js',
         // filename: 'bundle.js',
