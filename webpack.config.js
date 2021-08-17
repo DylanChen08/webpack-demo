@@ -31,12 +31,12 @@ module.exports = {
         clean: true,
         publicPath: '/',
     },
-    optimization: { //优化设置项
-        // runtimeChunk: 'single',
-        splitChunks: {
-            chunks: "all" //分割打包口
-        }
-    },
+    // optimization: { //优化设置项
+    //     // runtimeChunk: 'single',
+    //     splitChunks: {
+    //         chunks: "all" //分割打包口
+    //     }
+    // },
     plugins: [
         new HtmlWebpackPlugin({
             // title: 'Output Management',
